@@ -1,58 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Rocket Guidelines</title>
-
-    <!-- Bootstrap -->
+	<title>Rocket Guidelines | Home</title>
+    
+     <!-- Bootstrap & CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <style>
-    	.navbar{
-    		margin-bottom: 0;
-    		border-radius: 0;
-    	}
-    </style>
-  </head>
-  
-  <body id="body-disclaimer">
-  
- 
+    
+</head>
+<body>
+    <a name="top"></a>
 
-  <!-- JUMBOTRON -->
-  <div class="container">
-    <dir id="disclaimer" class="jumbotron text-center">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-sm-2 hidden-xs">
-              <img class="logo" src="img/logo.png">
+    <header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">B1G</a>
             </div>
-            <div class="col-md-8 col-sm-8" style="padding: 0 40px; border: black;">
-            <img src="img/logohr.png" style="width:20%;">
-              <div id="disclaimer-titre" class="titre">Lignes de Guide
-              </div>
-              <div id="dis" style="text-align: justify; text-justify: inter-word;">
-              <p id="dis-text"><u><span style="color:red;">DISCLAIMER:</span></u><br>
-              To take wiz a grain de sel. Le contenu de ce  dossier est le point de vue d’un ex all-star sur la route vers grand champion. Les informations contenues ne sont donc pas definitives et sont susceptibles de changer prochainement. Il est ainsi vivement conseiller de revenir sur ce dossier afin d'en decouvrir les changements. Il est probable qu'une strategie qui marche parfaitement en Plat I, II ou III soit completement inutile voire grotesque a un niveau plus eleve. Je ne prendrai donc aucune responsabilité en cas de tilt ou demotion. Le but de ce dossier est simplement d'aider le peuple a monter dans les ranks pour atteindre gloire et prospérité. Si vous ne faites pas parti du peuple alors il est grand temps de fermer cette page et retourner jouer a Dota pour certains, ou bosser pour d'autres. Sinon, cliquez ci-dessous pour découvrir le secret de la vraie roquette.</p>
-              </div>
 
-              <a id="toglory" href="main.html" class="btn btn-primary">VERS LA GLOIRE</a>
-
-              </div> 
-            <div class="col-md-2 col-sm-2 hidden-xs">
-              <img class="logo" src="img/logo.png">
-            </div>
-              
-        </div>
-      </div>
-      <p id=license >&copy; B1G  - 2017</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" onclick="toPage(12);return false;">Les 12</a></li>
+                    <li><a href="#" onclick="toPage('kickoff');return false;">Kickoff</a></li>
+                    <li><a href="#">Defense</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tricks <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="toPage('tricks');return false;">Main</a></li>
+                            <li><a href="#" onclick="toPage('power');return false;">Powershot</a></li>
+                            <li><a href="#" onclick="toPage('double');return false;">Double Jump</a></li>
+                            <li><a href="#">Half-flip</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+        
+    <!-- TITLE -->
+    <div id="jumbo" class="container">
+        <div class="titre">B1G ' Orno's</div>
+        <div class="soustitre">Lignes de Guide</div>		
     </div>
-  </div>
+    </header> <!--end header-->
+    
+    <article>
+        <div id="les12" class="container content tabcontent">
 
+                <!-- Blog Post -->
 
-  </body> 
-  </html>
+                <!-- Title -->
+                <h1 class="article-title">Les 12 Commandements</h1>
 
+                <!-- Author -->
+                <!--<p class="lead">
+                    by <a href="#">Orno</a>
+                </p> -->
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <div id="holder-12" style="height:300px;">
+                </div>
+
+                <hr>
+
+                <p style="text-align: justify; text-justify: inter-word;">Rocket League est un jeu simple, tout comme le jeu de la vie. Et comme la vie, Rocket a ete cree il y a bien longtemps, dans un pays lointain, au-dela des dunes et des vastes oceans. Tout a commence lorsque qu’un jeune paysan se baladait farouchement a la recherche de son voisin, Etienne, qui lui avait pique sa mobilette la veille de son anniversaire. Un scandale, dirait-on de nos jours, mais ca c’est une autre histoire. Une fois arrive au sommet du Mont Rhok-Eth, l’individu se posa, las, sur un sol legerement incline.  Pour la toute premiere fois il ressentit le mal l’envahir, un envie de tout casser, de crier fort, de se jeter dans le vide...Il marchait alors vers le precipice. C’est alors qu’il se ressaisit et realisa se qu’il se passait, la triste et terrible verite : il etait tilted.
+                <br><br>
+ 
+                Quand soudainement BLAM! Un eclair le frappa! puis un autre, un troisieme, un quatrieme, encore un autre! Ca ne s’arrete pluuuuuuuuuuus! [...] Mais enfin le silence regagna le terrain et le jeune homme, a qui le ciel venait litteralement de peter la gueule,  ouvrit les yeux. Il se releva pour trouver dans sa main gauche, sa main droite qui, elle, tenait une grosse pierre. Une vraie pierre de granite moulu. Comme dans les films. Un cote etait noir est rugueux. L’autre marron et rugueux. « Hmmm, curieux » dit-il avant de la jeter par la fenetre. Mais ce n’est pas tout. Avant de repartir, l’homme eu une vision du futur. Un futur de gloire et prosperite. Un futur dans lequel il serait admire par tous. Son destin. Apparut alors devant lui deux tables de granite moulu. Une orange. Une bleue.  Sur ces tables sont inscrits les 12 Commandements de La Roquette:</p>
+                <!-- Post Content -->
+                <div class="commandements">
+                      <p class="text-center">1) Tu ne daveras point.</p>
+                      <p class="text-center">2) Tu feras la passe a ton prochain comme tu la ferais a toi meme.</p>
+                      <p class="text-center">3) Tu ne feras pas de feintes a ton teamate.</p>
+                      <p class="text-center">4) Tu maitriseras le double jump.</p>
+                      <p class="text-center">5) Tu cliqueras sur "READY" en lobby ou unranked..</p>
+                      <p class="text-center">6) Tu poseras ta mandarine, ou tout autre agrume.</p>
+                      <p class="text-center">7) Tu ne feras pas un cafe en plein milieu d'une partie.*</p>
+                      <p class="text-center">8) Tu ne passeras pas la balle aux mechants.*</p>
+                      <p class="text-center">
+                        9) Tu n'iras pas sur la balloune si ton pote y est deja ou s'il a dit "j'ai".*</p>
+                      <p class="text-center">10) Tu mettras des oreilles de lapin sur ta voiture pendant la periode de Paques.</p>
+                      <p class="text-center">11) Le manque de boost, la marche arriere, les pneus et le backspin sont des vilains defauts. *</p>
+                      <p class="text-center">12) Le ping superieur a 300ms est un ENORME avantage.</p>
+                </div>
+                <p class="text-right" style="font-size:12px; font-family: MyFont3;">* sauf cas exceptionel (voir Appendice A.1 "Cas exceptionnel")</p>
+                <br>
+                <p style="text-align: justify; text-justify: inter-word;">Le jeune homme prit les deux pierres a son coup avant de debuter une longue et penible redescente. Mais il etait heureux. Pour une fois dans la vie, la chance lui souriait. Son destin l’attendait. Il ne savait pas encore qu’il allait bientôt devenir le tout premier Grand Champion au monde. Un inconnu, perdu dans la montagne.. Cet homme s’appelait Kronovi.</p>
+                <hr>
+        </div> <!-- end content Les 12 -->
+    
+        <div id="kickoff" class="container content tabcontent" style="display:none">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1 class="article-title">L'Ami Zangeux</h1>
+
+                <!-- Author -->
+                <!--<p class="lead">
+                    by <a href="#">Orno</a>
+                </p> -->
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <div id="holder-kickoff" style="height:300px;">
+                </div>
+                <hr>
+
+                <!-- Post Content -->
+              
+            <p class="lead" >La mise en jeu est la base du jeu, la premiere action en tout debut de partie ou sequence de jeu. Souvent neglige, le control de la mise en jeu peut avoir un impact crucial sur le resultat d’un match. Cela est surtout vrai en 1v1. Dans le tier inferieur (gold et moins) la mise en jeu est generalement aleatoire car les joueurs foncent a toutes vitesse, capots baisse dans la baloune. Alors qu’il existe differentes methodes de mise en jeu pour offrir l’avantage a celui qui les maitrise. </p>
+
+                <p>La mise en jeu demande du talent de prediction pour deviner ou la balle va partir apres avoir rebondit sur deux joueurs. Cela peut sembler difficile a premiere vue. Mais avec un peu d'entrainement ca devient presque de la rigolade. Evidemment, la mise en jeu est loin d'etre une science exacte. Trop de variables sont impliquees pour pouvoir calculer une trajectoire exacte. Cependant, sa maitrise augmente nettement la probabilite de finir sur un positionnement de balle avantageux.</p>
+                <p><span style="color:orange">OBJECTIF:</span> La mise en jeu doit se conclure soit par une prise de possession, soit par un placement de balle safe. Ou avec un peu de choune, un but direct. La balle-qui-reste-immobile-au-milieu (BQRIAM: b-ku-riam) est a eviter. * </p>
+
+                <p>Facteurs a prendre en compte lors de la mise en jeu:</p>
+                <ul>
+                    <li>Point de depart du vehicule (diago ou devant les cages)</li>
+                    <li>Methode de mise en jeu du mechant en face</li>
+                    <li>Vitesse: qui touche la balle en premier</li>
+                    <li>Point de contact avec la baloune</li>
+                    <li>Positionement du vehicule a l'impact</li>
+
+                </ul>
+
+                <p>Mises en jeu (plus lente a plus rapide):                </p>
+                <ul style="line-height: 90%;">
+                    <li>La newbie: <span style="float:right" ><img src="img/b.png"> &rarr; impact</span></li>
+                    <hr>
+                    <li>La normale: <span style="float:right"><img src="img/b.png"> &rarr; [front( <img src="img/a.png"> + <img src="img/a.png"> )] impact</span></li>
+                    <hr>
+                    <li>La chelou: <span style="float:right"> Unknown</span></li>
+                    <hr>
+                    <li>La rapide: <span style="float:right"> <img src="img/b.png"> &rarr; [front( <img src="img/a.png"> + <img src="img/a.png"> )] &rarr; <img src="img/b.png"> &rarr; [front( <img src="img/a.png"> + <img src="img/a.png"> )] impact</span></li>
+                    <hr>
+                    <li>Fast-kickoff: <span style="float:right"><img src="img/b.png"> &rarr; [(hold) <img src="img/b.png"> + <img src="img/a.png"> + rotation sur le cote + diago(<img src="img/a.png">)] &rarr; <img src="img/b.png"> &rarr; impact</span></li>
+                </ul>
+
+                <br>
+                
+                <p>Il est important de noter que chaque mise en jeu est differente. Il faut donc l'adapter en fonction de l'adversaire en face et de l'objectif fixe a l'avance. Par example, si l'adversaire est parti sur une normale a la sequence precedente, il y a de fortes chances qu'il refasse la meme. Dans ce cas, tenter un Fast-kickoff pour le rendre aveugle s'impose. Prevenir son teamate est vivement conseiller pour que ce dernier se mette en position pour profiter de l'avantage.</p>   
+
+                <p class="text-right" style="font-size:10px;">* sauf cas exceptionel (voir Appendice A.1 "Cas exceptionnel")</p>
+                <hr>
+        </div> <!-- end content Kickoff -->
+        
+        <div id="tricks" class="container content tabcontent" style="display:none">
+
+                <!-- Title -->
+                <h1 class="article-title">Tricks</h1>
+
+                <!-- Author -->
+                <!--<p class="lead">
+                    by <a href="#">Orno</a>
+                </p> -->
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <div id="holder-tricks" style="height:300px;">
+                </div>
+                <hr>
+
+                <!-- Post Content -->
+                <p class="lead" >C'est bien beau de jouer a Rocket League entre amis. On s'amuse, on rigole, on pleure parfois, toussa toussa.. Mais bon, le niveau stagne et on se demande presque s'il n'est pas temps d'abandonner pour passer a autre chose, au travail peut-etre... </p>
+                <p>Comme tout sport qui se respecte, Rocket possede une courbe d'apprentissage plus ou moins pentue. Certains, comme Charlou n'aurons aucun probleme a surmonter cette difficulte et se hisserons vers le sommet avec aisance, tandis que d'autres devrons se battre. Pour ces derniers, il va falloir utiliser un outils mis a disposition par les dieux de la roquette, aussi utile qu'efficace: le Freeplay. Car pour s'amuser, il faut gagner. Pour gagner il faut progresser (ou smurfer). Et pour progresser, il faut s'entrainer. Le Freeplay mec..le Freeplay te dis-je. Aussi il te faudra maitriser les tricks suivants pour passer le palier de la victoire, pour dire adieu a la defaite, pour voir Gold s'eloigner dans le retrovisseur, pour devenir plus grand.</p> <hr>
+                
+            <div id="power" class="trick">
+                
+                <h2 >Powershot</h2>
+                <blockquote class="blockquote-reverse" style="padding-left: 200px">
+                    <p style="text-align:right;">"Tu maitriseras le powershot et tu le cheriras comme le fil tiens a l'aiguille."</p>
+                    <footer><cite title="Le Nain Solan">Le Nain Solan</cite></footer>
+                </blockquote>
+                <p>Le powershot est LE tir qu'il faut connaitre. Ces applications sont nombreuses, aussi bien en defense qu'en attaque, sur les murs comme au sol. Il permet de percer la defense, faire des gros clears ou sniper mais surtout surtout des <abbr title="Passe Offensive To Redirect (po-tre)">POTR</abbr>.</p>
+                
+                <p>Pour frapper fort il faut connaitre quelques bases:<br>
+                En fonction de la ou c'est qu'on frappe avec la voiture sur la balle, et bien le reagissement de la balle va differer. D'une part en matiere de vitesse et deuxiemement au niveau de la trajectoire. Il est indispensable de se souvenir de la <abbr title="(pe-te-caca)">PTCAACA:</abbr></p>
+                
+                <div  id="ptcaca">
+                <dfn>
+                    <dt><span class="bigorange">P</span>neus</dt>
+                    <dd>Sont un vilain defaut *</dd>
+                    <dt><span class="bigorange">T</span>oiture</dt>
+                    <dd>Grande surface de frappe pour rediriger la balle sans trop de puissance.</dd>
+                    <dt><span class="bigorange">C</span>otes</dt>
+                    <dd>Offre plus de puissance mais une surface de frappe limitee. Plus difficile de controler la trajectoire.</dd>
+                    <dt><span class="bigorange">A</span>rriere</dt>
+                    <dd>Bon pour le freestryle ou pour la marche arriere. Sinon vivement deconseille.</dd>
+                    <dt><span class="bigorange">A</span>vant</dt>
+                    <dd>La on commence a parler. Ca frappe fort, et avec un peu de maitrise ca frappe droit.</dd>
+                    <dt><span class="bigorange">C</span>oins <span class="bigorange">A</span>vants</dt>
+                    <dd>Pour ceux qui veulent vraiment tirer de loin et fort et de loin aussi. L'outils indispensable du sniper. La maitrise du diagonal-flip est fortement conseillee.<p>Voici un exemple de comment que les choses sont faites avec les coin avants:</p>
+                    <iframe width="420" height="240"
+                        src="https://www.youtube.com/embed/PHUtYTlTo18">
+                    </iframe></dd>
+                </dfn>
+
+                </div>
+                                    <br>
+                <p>Le moyen le plus simple de realiser un power shot et de la prendre en demi volley.
+                Pour encore plus de vitesse, ajouter un frontflip.
+                Pour encore plus de vitesse, remplacer le front flip par un diagonal flip pour tapper la balle avec un coin avant. Le timing ici est extremement important car la fenetre de frappe est etroite, tres etroite...Un peu trop tot et la balle n'amasse pas de mousse <a href="https://gfycat.com/WelcomeVillainousAfricanharrierhawk">(exemple)</a>. Un peu trop tard et la voiture passe sous la balle et c'est perdu.</p>
+                
+                <p class="text-right" style="font-size:10px;">* sauf cas exceptionel (voir Appendice A.1 "Cas exceptionnel")</p>
+            </div>
+            <hr>
+                
+                
+            <div id="double" class="trick">
+                <h2>Double jump</h2>
+                <blockquote class="blockquote-reverse">
+                    <p style="text-align:right;">"Deux...c'est mieux." * </p>
+                    <footer><cite title="Le Nain Solan">Le Jesuite</cite></footer>
+                </blockquote>
+                <p>Pouvoir voler. Le reve devenu realite. Mais cela ne suffit plus. Non! Il ne sagit plus simplement de voler. Il faut maintenant voler le plus vite possible, idealement plus rapidement que son adversaire. Le newbie ne le sait pas mais il existe des moyens de s'envoyer en l'air beaucoup plus rapidement: le double jump est la base de cette discipline. Le Freeplay est ton ami.</p>
+                <p>Differents moyens de s'envoler (plus lent au plus rapide):                </p>
+                <ul style="line-height: 90%;">
+                    <li>La newbie: <span style="float:right" ><img src="img/a.png"> &rarr; tilt-back &rarr; <img src="img/b.png"> </span></li>
+                    <hr>
+                    <li>La double: <span style="float:right" >( <img src="img/a.png"> + <img src="img/a.png"> ) &rarr; tilt-back &rarr; <img src="img/b.png"> </span></li>
+                    <hr>
+                    <li>La rapide: <span style="float:right">(<img src="img/a.png"> + tilt-back) &rarr; (<img src="img/a.png"> + <img src="img/b.png">)</span></li>
+                    <hr>
+                    <li>Fast-Aerial: <span style="float:right">
+                        hold(<img src="img/b.png">) while [(<img src="img/a.png"> + tilt-back) &rarr; <img src="img/a.png">]
+                        </span></li>
+                </ul>
+                <br>
+                <p><span style="color:red">WARNING:</span> le double jump peut causer au non-initie un nombre non-negligeable de backflips et sideflips involontaires. Cela peut rendre le jouer tilted, conduire a unedefaite, rendre le joueur encore plus tilted, conduire a une autre defaite, etc...</p>
+                
+                <p class="text-right" style="font-size:10px;">* sauf cas exceptionel (voir Appendice A.1 "Cas exceptionnel")</p>
+            </div>
+            <hr>
+        </div>  <!-- end content Tricks -->
+    </article>
+    <footer>
+        <div class="container foot"><p id="copyright">B1G &copy; - 2017</p></div>
+    </footer>
+    
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

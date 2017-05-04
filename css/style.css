@@ -1,23 +1,36 @@
- /* * {
-  border-style: solid;
-  border-color:red;
-  border-width: 2px;
-} */
-
-
-#body-disclaimer {
-	background-color: black;
-	background-image: url("../img/back2.jpg");
-	background-repeat: no-repeat;
-	background-position: center top;
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 body {
-  background-color: black;
-  background-image: url("../img/back.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-   background-attachment: fixed;
+    background-color: black;
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    text-align: justify; 
+    text-justify: inter-word;
+}
+
+.navbar {
+    border-width: 0;
+    box-shadow: 0px 3px 3px #000;
+}
+
+#jumbo, .content {
+    box-shadow: 0px 10px 5px #000;
+}
+
+#jumbo{
+	background-image: url("../img/rocket.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    margin: 50px auto;
+    margin-bottom:0;
+    min-height: 250px;
+    
 }
 
 @font-face {
@@ -35,204 +48,37 @@ body {
     src: url("../fonts/CAS_ANTN.TTF");
 }
 
-p {
-  text-align: justify; 
-  text-justify: inter-word;
-
-}
-
-.bigorange {
-    color:orange;
-    font-family: MyFont3;
-    font-size:20px;
-}
-
-iframe {
-  display:block;
-  margin:auto;
-}
-.lead {
-  color:#d4d4d4;
-}
-
-.trick {
-    margin-top:-50px;
-    padding-top:40px;
-}
-
-h4, h2 {
-  color:orange;
-  font-family:MyFont;
-  text-shadow:0px 2px 2px #000;
-}
-
-#ptcaca {
-    padding-left:20px;
-}
-
-#ptcaca dd {
-    padding-left:30px;
-}
-
-#whole.row{
-  background-color:#262626;
-  color:#b3b3b3;
-  padding: 20px;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-#content {
-  background-color:#333333;
-  border-width: 0;
-  border-radius: 0;
-  box-shadow: 0px 2px 2px #000;
-  color:#b3b3b3;
-  padding: 20px;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.navbar {
-  border-width: 0;
-}
-
-/* BUTTONS */
-
-#toglory {
-	background-color: blue;
-	border-style: outset;
-	border-width: 4px;
-  position: relative;
-  bottom: -20px;
-}
-
-#toglory, .jumbotron, #disclaimer
-, #whole.row,{
-  box-shadow: 0px 2px 10px #000;
-}
-
-.jumbotron{
-	background-image: url("../img/rocket.jpg");
-	background-position: center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	margin: 0 0;
-
-}
-
-#holder-kickoff, #holder-12, #holder-tricks {
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-} 
-#holder-kickoff {
-  background-image: url("../img/banner.jpg");
-  
-}
-#holder-12 {
-  background-image: url("../img/banner2.jpg");
-}
-#holder-tricks {
-  background-image: url("../img/freeplay.jpg");
-}
-
-
-#disclaimer{
-	background-image: url("../img/rocket.jpg");
-	background-position: center;
-	background-size: auto 110%;
-	background-repeat: no-repeat;
-	margin: 150px -15px;
-	height: 650px;
-}  
-
-.logo {
-	width: 100%;
-}
-
-
-#dis {
-	margin: 10px -50px;
-	background-color: #f2f2f2;
-	border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0px 2px 5px #000;
-
-}
-#dis-text {
-  font-size: 12px;
-  padding:10px 10px 0 10px;
-}
-
-#license{
-  font-size: 12px;
-  color: white;
-  position:absolute;
-  bottom: 0;
-}
-
-.well {
-  background-color:#404040;
-  border-width: 0;
-  border-radius: 0;
-  box-shadow: 0px 2px 2px #000;
-}
-
-}
-#center{
-  background-color:white;
-  margin-bottom: 20px;
+.titre, .soustitre {
+    text-align: center;
+    margin:auto;
+    font-family: MyFont;
+    text-shadow: 0 1px 0 #ccc, 
+           0 2px 0 #c9c9c9,
+           0 3px 0 #bbb,
+           0 4px 0 #b9b9b9,
+           0 5px 0 #aaa,
+           0 6px 1px rgba(0,0,0,.1),
+           0 0 5px rgba(0,0,0,.1),
+           0 1px 3px rgba(0,0,0,.3),
+           0 3px 5px rgba(0,0,0,.2),
+           0 5px 10px rgba(0,0,0,.25),
+           0 10px 10px rgba(0,0,0,.2),
+           0 20px 20px rgba(0,0,0,.15),
+           0px 10px 30px #000;
 }
 .titre {
 	padding-top: 30px;
 	color:white; 
 	font-size: 50px;
-	font-family: MyFont;
+	
 	font-weight: 900;
 	text-decoration: underline;
- 	text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15),
-               0px 10px 30px #000;
-  vertical-align: middle;
+
 
 }
-
-#disclaimer-titre {
-	color:white; 
-	font-size: 58px;
-	font-family: MyFont;
-	font-weight: 900;
-	text-decoration: underline;
- 	text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15),
-               0px 10px 30px #000;
-}
-
 .soustitre {
 	color:blue; 
-	font-size: 65px;
-	font-family: MyFont;
+	font-size: 70px;
 	font-weight: 800;
  	text-shadow: 0 0px 0 #ccc, 
                0 0px 0 #c9c9c9,
@@ -249,39 +95,82 @@ h4, h2 {
                0px 10px 30px #000;
 }
 
-.article-title {
-  color:orange; 
-  font-size: 40px;
-  font-family: MyFont;
-  font-weight: 500;
-  text-shadow: 0px 10px 30px #000;
-               text-align: center;
-               
+.bigorange {
+    color:orange;
+    font-family: MyFont3;
+    font-size:20px;
+}
+/***************** CONTENT *****************/
 
+h4, h2 {
+    color:orange;
+    font-family:MyFont;
+    text-shadow:0px 2px 2px #000;
+    animation: fadeEffect 1s;
 }
 
-.navbar-brand{
-	font-family: MyFont;
-	font-size: 20px;
- text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+.content, .foot {
+    background-color: #262626;
+    color:#b3b3b3;
+    padding: 5px 30px;
+   
+}
 
+iframe {
+  display:block;
+  margin:auto;
 }
 
 .commandements {
-  font-family: MyFont3;
-  font-size:25px;
-  color:    #DAA520;
-  text-shadow: 0px 2px 5px #000;
-  padding:10px 100px;
+    font-family: MyFont3;
+    font-size:25px;
+    color:    #DAA520;
+    text-shadow: 0px 2px 5px #000;
+    margin: 20px 40px;
+    padding:40px 100px;
+    background: linear-gradient(to left, black, #333333, black);
+    border: 3px inset #daa520; 
 }
+
+.article-title {
+    color:orange; 
+    font-size: 40px;
+    font-family: MyFont;
+    font-weight: 500;
+    text-shadow: 0px 10px 30px #000;
+    text-align: center;
+    animation: fadeEffect 0.5s;
+}
+
+.trick {
+    margin-top: -70px;
+    padding-top: 50px;
+}
+
+/****** FOOTER ****/
+footer #copyright{
+    text-align: center;
+    margin-top:-10px;
+}
+
+/******** IMAGE HOLDERS ***********/
+#holder-kickoff, #holder-12, #holder-tricks {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    animation: fadeEffect 2s;
+} 
+
+#holder-kickoff {
+    background-image: url("../img/banner.jpg");
+  
+}
+#holder-12 {
+    background-image: url("../img/banner2.jpg");
+}
+
+#holder-tricks {
+  background-image: url("../img/freeplay.jpg");
+}
+
+/*************************************/

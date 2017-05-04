@@ -1,26 +1,31 @@
-$(document).ready(function(){
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-    });
-});
+function toPage(e) {
+    var i;
+    content = document.getElementsByClassName("content");
+    for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
     
-$(function() {
+    switch (e) {
+        case 12:
+            document.getElementById("les12").style.display = "block";
+            window.scroll(0,0);
+            break;
+        case "kickoff":
+            document.getElementById("kickoff").style.display = "block";
+            window.scroll(0,0);
+            break;
+        case "tricks":
+            document.getElementById("tricks").style.display = "block";
+            window.scroll(0,0);
+        break;
+        case "power":
+            document.getElementById("tricks").style.display = "block";
+            document.getElementById("power").scrollIntoView();
+        break;
+        case "double":
+            document.getElementById("tricks").style.display = "block";
+            document.getElementById("double").scrollIntoView();
+        break;
 
-    var $sidebar   = $("#sidebar"), 
-        $window    = $(window),
-        offset     = $sidebar.offset(),
-        topPadding = 40;
-
-    $window.scroll(function() {
-        if ($window.scrollTop() > offset.top) {
-            $sidebar.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding
-            });
-        } else {
-            $sidebar.stop().animate({
-                marginTop: 0
-            });
-        }
-    });
-    
-});
+    }
+}
