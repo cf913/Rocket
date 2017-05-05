@@ -32,15 +32,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#" onclick="toPage(12);return false;">Les 12</a></li>
+                    <li><a href="#" onclick="toPage('les12');return false;">Les 12</a></li>
                     <li><a href="#" onclick="toPage('kickoff');return false;">Kickoff</a></li>
                     <li><a href="#">Defense</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tricks <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" onclick="toPage('tricks');return false;">Main</a></li>
-                            <li><a href="#" onclick="toPage('power');return false;">Powershot</a></li>
-                            <li><a href="#" onclick="toPage('double');return false;">Double Jump</a></li>
+                            <li><a href="#" onclick="withinPage('tricks','power');return false;">Powershot</a></li>
+                            <li><a href="#" onclick="withinPage('tricks','double');return false;">Double Jump</a></li>
                             <li><a href="#">Half-flip</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Separated link</a></li>
