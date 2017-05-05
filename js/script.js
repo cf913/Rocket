@@ -8,7 +8,7 @@ function toPage(e) {
     window.scroll(0,0);
 }
 
-function wihinPage(page, target) {
+function withinPage(page, target) {
     var i;
     content = document.getElementsByClassName("content");
     for (i = 0; i < content.length; i++) {
