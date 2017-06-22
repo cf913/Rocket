@@ -176,11 +176,12 @@ footer #copyright{
 }
 
 /******** IMAGE HOLDERS ***********/
-#holder-kickoff, #holder-12, #holder-tricks {
+.holder {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     animation: fadeEffect 2s;
+    height:300px;
 } 
 
 #holder-kickoff {
@@ -201,3 +202,51 @@ footer #copyright{
 }
 
 /*************************************/
+
+@media (max-width: 550px) {
+  .titre {
+    font-size: 25px;
+  }
+  .soustitre {
+    font-size: 40px;
+  }
+  #jumbo {
+    min-height: 150px;
+  }
+  .article-title {
+    font-size: 20px;
+  }
+
+  .holder {
+    height:150px;
+  }
+
+  .commandements {
+    margin:0;
+    width: 100%;
+    padding: 5px;
+    font-size:1.2em;
+  }
+
+  .blockquote-reverse {
+    padding:0;
+    margin:0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
