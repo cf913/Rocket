@@ -32,16 +32,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#" onclick="toPage('les12');return false;">Les 12</a></li>
-                    <li><a href="#" onclick="toPage('kickoff');return false;">Kickoff</a></li>
+                    <li><a href="#" onclick="toPage('les12', this, 0); return false;">Les 12</a></li>
+                    <li><a href="#" onclick="toPage('kickoff', this, 0); return false;">Kickoff</a></li>
                     <li><a href="#">Defense</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tricks <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tricks <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" onclick="toPage('tricks');return false;">Main</a></li>
-                            <li><a href="#" onclick="withinPage('tricks','power');return false;">Powershot</a></li>
-                            <li><a href="#" onclick="withinPage('tricks','double');return false;">Double Jump</a></li>
-                            <li><a href="#">Half-flip</a></li>
+                            <li><a href="#" onclick="toPage('tricks', this, 1); return false;">Main</a></li>
+                            <li><a href="#" onclick="withinPage('tricks','power', this);return false;">Powershot</a></li>
+                            <li><a href="#" onclick="withinPage('tricks','double', this);return false;">Double Jump</a></li>
+                            <li><a href="#" onclick="withinPage('tricks','half-flip', this);return false;">Half-flip</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Separated link</a></li>
                             <li role="separator" class="divider"></li>
@@ -51,8 +51,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Template<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" onclick="toPage('template');return false;">Main</a></li>
-                            <li><a href="#" onclick="withinPage('template','innerTemplate');return false;">Inner Content</a></li>
+                            <li><a href="#" onclick="toPage('template', this, 1);return false;">Main</a></li>
+                            <li><a href="#" onclick="withinPage('template','innerTemplate', this);return false;">Inner Content</a></li>
                             <li><a href="#">Link</a></li>
                             <li><a href="#">Link</a></li>
                             <li role="separator" class="divider"></li>
@@ -257,7 +257,7 @@
                 Pour encore plus de vitesse, remplacer le front flip par un diagonal flip pour tapper la balle avec un coin avant. Le timing ici est extremement important car la fenetre de frappe est etroite, tres etroite...Un peu trop tot et la balle n'amasse pas de mousse <a href="https://gfycat.com/WelcomeVillainousAfricanharrierhawk">(exemple)</a>. Un peu trop tard et la voiture passe sous la balle et c'est perdu.</p>
                 
                 <p class="text-right" style="font-size:10px;">* sauf cas exceptionel (voir Appendice A.1 "Cas exceptionnel")</p>
-            </div>
+            </div> <!-- End PowerShot -->
             <hr>
                 
                 
@@ -284,7 +284,35 @@
                 <p><span style="color:red">WARNING:</span> le double jump peut causer au non-initie un nombre non-negligeable de backflips et sideflips involontaires. Cela peut rendre le jouer tilted, conduire a unedefaite, rendre le joueur encore plus tilted, conduire a une autre defaite, etc...</p>
                 
                 <p class="text-right" style="font-size:10px;">* sauf cas exceptionel (voir Appendice A.1 "Cas exceptionnel")</p>
-            </div>
+            </div> <!-- End Double Jump -->
+            <hr>
+            
+            <div id="half-flip" class="trick">
+                <h2>Half Flip</h2>
+                <blockquote class="blockquote-reverse">
+                    <p style="text-align:right;">"Avec le Half-Flip, peut-on encore dire que la marche arriere est un vilain defaut?" * </p>
+                    <footer><cite title="Le Nain Solan">Le Pro Fdeufilo</cite></footer>
+                </blockquote>
+                <p>Pouvoir voler. Le reve devenu realite. Mais cela ne suffit plus. Non! Il ne sagit plus simplement de voler. Il faut maintenant voler le plus vite possible, idealement plus rapidement que son adversaire. Le newbie ne le sait pas mais il existe des moyens de s'envoyer en l'air beaucoup plus rapidement: le double jump est la base de cette discipline. Le Freeplay est ton ami.</p>
+                <p>Differents moyens de s'envoler (plus lent au plus rapide):                </p>
+                <ul style="line-height: 90%;">
+                    <li>La newbie: <span style="float:right" ><img src="img/a.png"> &rarr; tilt-back &rarr; <img src="img/b.png"> </span></li>
+                    <hr>
+                    <li>La double: <span style="float:right" >( <img src="img/a.png"> + <img src="img/a.png"> ) &rarr; tilt-back &rarr; <img src="img/b.png"> </span></li>
+                    <hr>
+                    <li>La rapide: <span style="float:right">(<img src="img/a.png"> + tilt-back) &rarr; (<img src="img/a.png"> + <img src="img/b.png">)</span></li>
+                    <hr>
+                    <li>Fast-Aerial: <span style="float:right">
+                        hold(<img src="img/b.png">) while [(<img src="img/a.png"> + tilt-back) &rarr; <img src="img/a.png">]
+                        </span></li>
+                </ul>
+                <div id="hf-gif" style='position:relative; padding-bottom:54%'><iframe src='https://gfycat.com/ifr/QuarterlySparklingHedgehog' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
+                <br>
+                <p><span style="color:red">WARNING:</span> le double jump peut causer au non-initie un nombre non-negligeable de backflips et sideflips involontaires. Cela peut rendre le jouer tilted, conduire a unedefaite, rendre le joueur encore plus tilted, conduire a une autre defaite, etc...</p>
+                
+                <p class="text-right" style="font-size:10px;">* sauf cas exceptionel (voir Appendice A.1 "Cas exceptionnel")</p>
+            </div> <!-- End Half Flip -->
+            
             <hr>
         </div>  <!-- end content Tricks -->
         
@@ -324,6 +352,7 @@
                     <p style="text-align:right;">"Quote to add here"</p>
                     <footer><cite title="Le Nain Solan">Author to add here</cite></footer>
                 </blockquote>
+                
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in luctus enim. Fusce convallis rutrum aliquam. Curabitur felis augue, scelerisque quis pellentesque quis, venenatis ut purus. Donec maximus nisl velit, scelerisque elementum sem imperdiet ac. Aliquam vel odio ut nisi dignissim bibendum et vitae ligula. Cras nec posuere libero. Vivamus varius nulla ut feugiat varius. Cras egestas sit amet lorem non pretium.</p>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in luctus enim. Fusce convallis rutrum aliquam. Curabitur felis augue, scelerisque quis pellentesque quis, venenatis ut purus. Donec maximus nisl velit, scelerisque elementum sem imperdiet ac. Aliquam vel odio ut nisi dignissim bibendum et vitae ligula. Cras nec posuere libero. Vivamus varius nulla ut feugiat varius. Cras egestas sit amet lorem non pretium.</p>
